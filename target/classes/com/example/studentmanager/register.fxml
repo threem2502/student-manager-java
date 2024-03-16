@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanager.RegisterController">
+   <children>
+      <Button layoutX="24.0" layoutY="12.0" mnemonicParsing="false" onAction="#studentScreen" text="Student" />
+      <TableView fx:id="subjectTable" layoutX="10.0" layoutY="45.0" prefHeight="366.0" prefWidth="390.0">
+         <columns>
+            <TableColumn fx:id="subIdColumn" text="SubID" />
+            <TableColumn fx:id="subNameColumn" prefWidth="159.0" text="SubName" />
+            <TableColumn fx:id="soTcColumn" prefWidth="147.20001220703125" text="Số TC" />
+         </columns>
+      </TableView>
+      <Button layoutX="419.0" layoutY="181.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Button layoutX="509.0" layoutY="181.0" mnemonicParsing="false" onAction="#done" prefHeight="26.0" prefWidth="58.0" text="Done" />
+   </children>
+</AnchorPane>

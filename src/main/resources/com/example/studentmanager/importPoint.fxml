@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanager.ImportController">
+   <children>
+      <TableView fx:id="subjectTableView" layoutX="10.0" layoutY="45.0" prefHeight="366.0" prefWidth="356.0">
+         <columns>
+            <TableColumn fx:id="id" text="SubID" />
+            <TableColumn fx:id="name" prefWidth="159.0" text="SubName" />
+            <TableColumn fx:id="point" prefWidth="116.0" text="Point" />
+         </columns>
+      </TableView>
+      <Label layoutX="392.0" layoutY="121.0" text="Point: " />
+      <TextField fx:id="pointText" layoutX="437.0" layoutY="117.0" />
+      <Button layoutX="383.0" layoutY="193.0" mnemonicParsing="false" onAction="#importPoint" text="Import" />
+      <Button layoutX="500.0" layoutY="193.0" mnemonicParsing="false" onAction="#done" text="Done" />
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#studentScreen" text="Student" />
+   </children>
+</AnchorPane>

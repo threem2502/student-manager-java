@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.studentmanager.Controller">
+    <children>
+        <TableView fx:id="studentTable" layoutY="35.0" prefHeight="365.0" prefWidth="439.0">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" />
+                <TableColumn fx:id="nameColumn" prefWidth="159.0" text="Name" />
+                <TableColumn fx:id="sdtColumn" prefWidth="116.0" text="SDT" />
+                <TableColumn fx:id="pointColumn" prefWidth="83.0" text="AVG Point" />
+            </columns>
+        </TableView>
+        <Label layoutX="446.0" layoutY="62.0" prefHeight="16.0" prefWidth="39.0" text="ID" />
+        <Label layoutX="446.0" layoutY="105.0" text="Name" />
+        <Label layoutX="446.0" layoutY="146.0" prefHeight="16.0" prefWidth="39.0" text="SDT" />
+        <TextField fx:id="idText" layoutX="485.0" layoutY="58.0" />
+        <TextField fx:id="sdtText" layoutX="485.0" layoutY="142.0" />
+        <TextField fx:id="nameText" layoutX="485.0" layoutY="101.0" />
+        <Button layoutX="450.0" layoutY="243.0" mnemonicParsing="false" onAction="#add" prefHeight="24.0" prefWidth="61.0" text="Add" />
+        <Button layoutX="450.0" layoutY="280.0" mnemonicParsing="false" onAction="#delete" prefHeight="26.0" prefWidth="62.0" text="Delete" />
+        <Button layoutX="450.0" layoutY="315.0" mnemonicParsing="false" onAction="#edit" prefHeight="24.0" prefWidth="61.0" text="Edit" />
+        <Button layoutX="450.0" layoutY="351.0" mnemonicParsing="false" onAction="#save" prefHeight="24.0" prefWidth="61.0" text="Save" />
+        <Button layoutX="543.0" layoutY="243.0" mnemonicParsing="false" onAction="#importPoint" text="Import point" />
+      <Label layoutX="446.0" layoutY="191.0" prefHeight="18.0" prefWidth="39.0" text="Point" />
+      <TextField fx:id="pointText" layoutX="486.0" layoutY="188.0" />
+      <Button layoutX="543.0" layoutY="281.0" mnemonicParsing="false" onAction="#filter" prefHeight="26.0" prefWidth="83.0" text="Filter" />
+      <Button layoutX="14.0" layoutY="2.0" mnemonicParsing="false" text="Student" />
+      <Button layoutX="93.0" layoutY="2.0" mnemonicParsing="false" onAction="#subScreen" text="Subject" />
+      <Button layoutX="179.0" layoutY="2.0" mnemonicParsing="false" onAction="#registerSceen" text="Register" />
+    </children>
+</AnchorPane>
